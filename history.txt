@@ -1,5 +1,5 @@
-   
-   
+    1  huj
+    2  firefox&
     3  /cd
     4  firefox
     5  rmdir
@@ -46,3 +46,90 @@
    46  pwd
    47  cat history.txt
    48  history > history.txt
+   49  ls -l
+   50  ls
+   51  nano history.txt
+   52  ls
+   53  ls -l
+   54  cat history.txt
+   55  git add .
+   56  git commit -m "20171409_16_41"
+   57  git push origin master
+   58  echo Tecmint is a community of Linux Nerds 
+   59  x=10
+   60  The value of variable x = 10
+   61  echo The value of variable x = 10
+   62  echo -e "Tecmint \bis \ba \bcommunity \bof \bLinux \bNerds" 
+   63  TecmintisacommunityofLinuxNerds 
+   64  echo The value of variable x = $x 
+   65  echo -e "Tecmint \bis \ba \bcommunity \bof \bLinux \bNerds" 
+   66  echo -e "Tecmint \nis \na \ncommunity \nof \nLinux \nNerds" 
+   67  Tecmint 
+   68  is 
+   69  a 
+   70  community 
+   71  of 
+   72  Linux 
+   73  echo The value of variable x = $x 
+   74  echo -e "Tecmint \bis \ba \bcommunity \bof \bLinux \bNerds"
+   75  echo -e "Tecmint \nis \na \ncommunity \nof \nLinux \nNerds" 
+   76  echo -e "Tecmint \tis \ta \tcommunity \tof \tLinux \tNerds"
+   77  echo -e "\n\tTecmint \n\tis \n\ta \n\tcommunity \n\tof \n\tLinux \n\tNerds"
+   78  echo -e "\vTecmint \vis \va \vcommunity \vof \vLinux \vNerds"
+   79  echo -e "\n\vTecmint \n\vis \n\va \n\vcommunity \n\vof \n\vLinux \n\vNerds"
+   80  echo -e "Tecmint \ris a community of Linux Nerds"
+   81  echo -e "Tecmint is a community \cof Linux Nerds"
+   82  echo -n "Tecmint is a community of Linux Nerds" 
+   83  echo -e "Tecmint is a community of \aLinux Nerds" 
+   84  echo * 
+   85  echo *.jpeg 
+   86  echo "Test Page" > testpage 
+   87  cat testpage
+   88  ls -l
+   89  x=20
+   90  pwd
+   91  ls -l
+   92  pwd
+   93  cp history.txt a.txt
+   94  -l
+   95  ls -l
+   96  cp history.txt -/a1.txt
+   97  cp history.txt -/al.txt
+   98  pwd
+   99  cp history.txt -/al.txt
+  100  pwd
+  101  cp history.txt -/a1.txt
+  102  cp history.txt ../al.txt
+  103  ls
+  104  cd..
+  105  cd ..
+  106  ls
+  107  cd darbi
+  108  cd /
+  109  pwd
+  110  mv /home/user/*.txt -/darbi/\
+  111  mv /home/user/*.txt -/darbi/
+  112  pwd
+  113  cd darbi
+  114  /cd
+  115  cd tmp
+  116  ls
+  117  cd ..
+  118  cd darbi
+  119  ;s
+  120  ls
+  121  cd tmp
+  122  ls -l
+  123  cd guest-cQNtnQ
+  124  ls
+  125  cd darbi
+  126  man rmdir
+  127  less history.txt
+  128  nano history.txt
+  129  ls -l
+  130  nano
+  131  nano history.txt
+  132  cat nano.txt
+  133  pwd
+  134  ls -la
+  135  history > history.txt

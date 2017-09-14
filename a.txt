@@ -1,0 +1,48 @@
+   
+   
+    3  /cd
+    4  firefox
+    5  rmdir
+    6  /rmdir
+    7  uname -r
+    8  lsb_release
+    9  lsb_releasecat
+   10  firefox
+   11  ls
+   12  mkdir Documents/
+   13  mk
+   14  mkdir darbi
+   15  ls
+   16  cd darbi/
+   17  pwd
+   18  ls -la
+   19  history
+   20  >history.txt
+   21  > history.txt
+   22  firefox &
+   23  pwd
+   24  cd
+   25  ls
+   26  cd darbi/
+   27  cat history.txt
+   28  history
+   29  ls
+   30  cat history.txt
+   31  ls
+   32  pwd
+   33  cat history.txt
+   34  PWD
+   35  pwd
+   36  cat history.txt
+   37  git init
+   38  git add.
+   39  git add .
+   40  git config --global user.email neimanis322@inbox.lv
+   41  ls
+   42  git commit -m "20170914_15_55"
+   43  git remote add origin https://github.com/Neimanis322/DMI.git
+   44  git push orgin master
+   45  git push origin master
+   46  pwd
+   47  cat history.txt
+   48  history > history.txt
