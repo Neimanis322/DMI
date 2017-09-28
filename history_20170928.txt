@@ -1,0 +1,84 @@
+    1  echo $0
+    2  history
+    3  nano shell_exple.sh
+    4  echo $0
+    5  ./shell_exple.sh
+    6  nano shell_exple.sh
+    7  ./shell_exple.sh
+    8  nano shell_exple.sh
+    9  ./shell_exple.sh
+   10  nano shell_exple.sh
+   11  echo $#
+   12  nano shell_exple.sh
+   13  ./shell_exple.sh
+   14  nano shell_exple.sh
+   15  nano shell_exple.sh arg1
+   16  nano shell_exple.sh arg2
+   17  ./shell_exple.sh arg1
+   18  ./shell_exple.sh arg2
+   19  ./shell_exple.sh arg1 arg2
+   20  ./shell_exple.sh arg1 arg2 arg3
+   21  ./shell_exple.sh arg1 arg2 arg3 arg4
+   22  echo $#
+   23  echo $*
+   24  nano shell_exple.sh
+   25  $*
+   26  echo $*
+   27  ./shell_exple.sh
+   28  ./shell_exple.sh arg1
+   29  ./shell_exple.sh arg1 arg2
+   30  echo $@
+   31  nano shell_exple.sh
+   32  ./shell_exple.sh 
+   33  nano git-upload
+   34  ./shell_exple.sh 
+   35  echo $?
+   36  nano shell_exple.sh
+   37  nan
+   38  echo $?
+   39  nano shell_exple.sh
+   40  ./shell_exple.sh 
+   41  nano shell_exple.sh
+   42  ./shell_exple.sh 
+   43  ./y
+   44  echo $?
+   45  nano shell_exple.sh
+   46  ./shell_exple.sh 
+   47  echo $$
+   48  ./shell_exple.sh 
+   49  echo $$
+   50  ./shell_exple.sh 
+   51  echo $$
+   52  ./shell_exple.sh 
+   53  nano shell_exple.sh
+   54  echo $$
+   55  nano shell_exple.sh
+   56  echo $$
+   57  nano shell_exple.sh
+   58  ./shell_exple.sh
+   59  nano shell_exple.sh
+   60  ./shell_exple.sh
+   61  nano shell_exple.sh
+   62  ./shell_exple.sh
+   63  echo $!
+   64  nano shell_exple.sh
+   65  echo$!
+   66  echo $!
+   67  nano shell_exple.sh
+   68  ./shell_exple.sh
+   69  cd ..
+   70  nano git-upload
+   71  nano git.upload
+   72* 
+   73  nano git-upload
+   74  ls -la
+   75  pwd
+   76  nano git-upload
+   77  cd Documents
+   78  ls -la
+   79  cd ..
+   80  cd DMI
+   81  ls -la
+   82  git-upload
+   83  nano git-upload
+   84  history > history_20170928.txt
