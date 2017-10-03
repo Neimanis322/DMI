@@ -1,4 +1,4 @@
-
+    1  pwd
     2  firefox&
     3  /cd
     4  firefox
