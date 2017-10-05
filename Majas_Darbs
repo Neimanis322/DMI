@@ -1,0 +1,20 @@
+cd - mainīt direktoriju
+cat - apvienot un parādīt faila saturu
+chmod 744 - faila pilna piekļuve adminisratoram, bet citi lietotāji var tikai lasīt faila saturu
+cp - kopēt
+$ echo - izvada teksta rindu uz terminālu
+history - rāda vēsturi, kas satur komandas, kuri biji ievadeti šaja sessija
+less - parāda failu ar iespeju to aplūkot
+ln - savienot failus
+ls - rāda failus un mapes mapē, kur mēs esam
+lsb_release - rāda informaciju par jūsu distributivu
+mkdir - izveidot jauno mapi
+mv - faila pārvietošāna/ izmainīt faila nosaukumu
+nano - izveido teksta redaktoru
+pwd - mapes nosaukums, kur mēs tagad esam
+rm - dzēst failus
+rmdir - dzēst mapi
+uname - informaciju par sistēmu
+whereis - palīdz atrast failu vai mapi
+who - informacija par lietotāju, laiks u.t.t
+whoami - informacija par lietotāju
