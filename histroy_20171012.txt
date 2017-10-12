@@ -1,0 +1,86 @@
+    1  pwd
+    2  ls -la
+    3  ls -l
+    4  firefox &
+    5  git clone https://github.com/Neimanis322/DMI
+    6  pwd
+    7  pwdp
+    8  pwd
+    9  nano 
+   10  cd DMI/
+   11  nano Shell Relational Operators
+   12  chmod 744 Shell
+   13  ./Shell
+   14  nano Shell
+   15  ./Shell
+   16  nano Shell
+   17  cat Shell
+   18  nano Shell
+   19  ./Shell
+   20  nano Shell
+   21  ./Shell
+   22  nano Shell
+   23  ./Shell
+   24  nano Shell
+   25  ./Shell
+   26  pwd
+   27  nano shell_relational_operators_comments.sh
+   28  ./shell_relational_operators_comments.sh
+   29  chmod 744 shell_relational_operators_comments.sh
+   30  ./shell_relational_operators_comments.sh
+   31  ls -la
+   32  shell_relational_operators_comments.sh
+   33  ./shell_relational_operators_comments.sh
+   34  nano shell_relational_operators_comments.sh
+   35  ./shell_relational_operators_comments.sh
+   36  chmod 744 shell_relational_operators_comments.sh
+   37  ./shell_relational_operators_comments.sh
+   38  nano shell_relational_operators_comments.sh
+   39  shell_relational_operators_comments.sh
+   40  ./shell_relational_operators_comments.sh
+   41  nano shell_relational_operators_comments.sh
+   42  ./shell_relational_operators_comments.sh
+   43  nano shell_relational_operators_comments.sh
+   44  ./shell_relational_operators_comments.sh
+   45  nano shell_relational_operators_comments.sh
+   46  ./shell_relational_operators_comments.sh
+   47  nano shell_relational_operators_comments.sh
+   48  ./shell_relational_operators_comments.sh
+   49  nano shell_relational_operators_comments.sh
+   50  ./shell_relational_operators_comments.sh
+   51  nano shell_relational_operators_comments.sh
+   52  ./shell_relational_operators_comments.sh
+   53  nano shell_relational_operators_comments.sh
+   54  ./shell_relational_operators_comments.sh
+   55  nano shell_relational_operators_comments.sh
+   56  ./shell_relational_operators_comments.sh
+   57  nano shell_relational_operators_comments.sh
+   58  ./shell_relational_operators_comments.sh
+   59  nano shell_relational_operators_comments.sh
+   60  ./shell_relational_operators_comments.sh
+   61  nano shell_relational_operators_comments.sh
+   62  ./shell_relational_operators_comments.sh
+   63  nano shell_relational_operators_comments.sh
+   64  ./shell_relational_operators_comments.sh
+   65  nano shell_relational_operators_comments.sh
+   66  ./shell_relational_operators_comments.sh
+   67  nano shell_relational_operators_comments.sh
+   68  ./shell_relational_operators_comments.sh
+   69  nano shell_relational_operators_comments.sh
+   70  ./shell_relational_operators_comments.sh
+   71  nano shell_relational_operators_comments.sh
+   72  ./shell_relational_operators_comments.sh
+   73  nano shell_relational_operators_comments.sh
+   74  ./shell_relational_operators_comments.sh
+   75  nano shell_relational_operators_comments.sh
+   76  ./shell_relational_operators_comments.sh
+   77  nano shell_relational_operators_comments.sh
+   78  ./shell_relational_operators_comments.sh
+   79  nano shell_relational_operators_comments.sh
+   80  ./shell_relational_operators_comments.sh
+   81  nano shell_relational_operators_comments.sh
+   82  nano git-upload
+   83  ./git-upload
+   84  nano git-upload
+   85  ./git-upload
+   86  history > histroy_20171012.txt
