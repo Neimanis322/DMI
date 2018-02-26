@@ -1,0 +1,145 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>lab1</title><meta name="generator" content="MATLAB 9.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-02-26"><meta name="DC.source" content="lab1.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><pre class="codeinput"><span class="comment">%Raimonds Neimanis -REBCO4</span>
+A = imread(<span class="string">'c.png'</span>);
+B = imread(<span class="string">'d.png'</span>);
+figure(1),image(A),shg
+figure(2),image(B),shg
+figure(2),image([3.0 5.0],[50 0],B),
+set(gca,<span class="string">'YDir'</span>,<span class="string">'normal'</span>)
+<span class="comment">%[x,y] = ginput(8)</span>
+x =[3.3456    3.5260    3.6462    3.7202    3.7757    3.8451    3.9006    3.9514];
+y =[1.0067    5.1031   13.2959   21.6351   27.9260   36.8504   42.5561   49.2859];
+plot(x,y,<span class="string">'o-'</span>)
+U = 3.3:0.01:3.95;
+C = polyfit(x,y,2)
+I = C(1)*U.^2+C(2)*U+C(3);
+C = polyval(C,U);
+plot(x,y,<span class="string">'o'</span>,U,I)
+xlabel(<span class="string">'Forward Voltage(V)'</span>)
+ylabel(<span class="string">'Forward Current(mA)'</span>)
+title(<span class="string">'Grafik1'</span>)
+axis([3.0 5.0 0 50])
+grid
+<span class="comment">%Secinajumi: Ko es saprastu?</span>
+<span class="comment">%1)Pirmk?rt es iel?deju 2 grafiki matlab?, no farnell.com.</span>
+<span class="comment">%2)P?c tam bija obligati apgriezt x un y asi, lai kad es iel?deju grafiku matlab? vi?? sakr?t.</span>
+<span class="comment">%3)Nako?ais punkts, bija nolas?t 8 punktus un p?c tam uzz?met grafiku</span>
+<span class="comment">%4)Komanda polyfit apr??in? v?rt?bas un p?c tam bija iesp?jams izveidot 2</span>
+<span class="comment">%pak?pes polinomu.</span>
+<span class="comment">%5)Ar komandu 'xlabel' es izveidoju nosaukumu x asei</span>
+<span class="comment">%6)Ar komandu 'ylabel' es izveidoju nosaukumu y asei</span>
+<span class="comment">%7)Ar komandu 'title'  es devu ?im grafikam nosaukumu</span>
+<span class="comment">%8)Galvenais secin?jums no ?aja lab.darba, ka jebkuru grafiku no internet?</span>
+<span class="comment">%var apstr?dat ar programmu matlab, un ar ?o pa?o pa?u programmu ir</span>
+<span class="comment">%iesp?jams izveidot tadu pa?u grafiku</span>
+</pre><pre class="codeoutput">
+C =
+
+   1.0e+03 *
+
+    0.1175   -0.7747    1.2772
+
+</pre><img vspace="5" hspace="5" src="lab1_01.png" alt=""> <img vspace="5" hspace="5" src="lab1_02.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%Raimonds Neimanis -REBCO4
+A = imread('c.png');
+B = imread('d.png');
+figure(1),image(A),shg
+figure(2),image(B),shg
+figure(2),image([3.0 5.0],[50 0],B),
+set(gca,'YDir','normal')
+%[x,y] = ginput(8)
+x =[3.3456    3.5260    3.6462    3.7202    3.7757    3.8451    3.9006    3.9514];
+y =[1.0067    5.1031   13.2959   21.6351   27.9260   36.8504   42.5561   49.2859];
+plot(x,y,'o-')
+U = 3.3:0.01:3.95;
+C = polyfit(x,y,2)
+I = C(1)*U.^2+C(2)*U+C(3);
+C = polyval(C,U);
+plot(x,y,'o',U,I)
+xlabel('Forward Voltage(V)')
+ylabel('Forward Current(mA)')
+title('Grafik1')
+axis([3.0 5.0 0 50])
+grid
+%Secinajumi: Ko es saprastu?
+%1)Pirmk?rt es iel?deju 2 grafiki matlab?, no farnell.com.
+%2)P?c tam bija obligati apgriezt x un y asi, lai kad es iel?deju grafiku matlab? vi?? sakr?t.
+%3)Nako?ais punkts, bija nolas?t 8 punktus un p?c tam uzz?met grafiku 
+%4)Komanda polyfit apr??in? v?rt?bas un p?c tam bija iesp?jams izveidot 2
+%pak?pes polinomu.
+%5)Ar komandu 'xlabel' es izveidoju nosaukumu x asei
+%6)Ar komandu 'ylabel' es izveidoju nosaukumu y asei 
+%7)Ar komandu 'title'  es devu ?im grafikam nosaukumu
+%8)Galvenais secin?jums no ?aja lab.darba, ka jebkuru grafiku no internet?
+%var apstr?dat ar programmu matlab, un ar ?o pa?o pa?u programmu ir
+%iesp?jams izveidot tadu pa?u grafiku
+##### SOURCE END #####
+--></body></html>
