@@ -1,4 +1,5 @@
 %2.laboratorijas darbs
+%Raimonds Neimanis 171REB112 - REBCO4, 1.kurss
 %1.uzd atrisinat vienadojumu a + e^b*(x^2)-a*x = 100
 syms a b x e
 y = solve(a+e^b*x^2-a*x == 100)
@@ -20,3 +21,16 @@ y_ltx = latex(y);
 y_int_ltx = latex(y_int);
 h = legend(['$',y_ltx,'$'],['$',y_int_ltx,'$']);
 set(h,'Interpreter','latex')
+%Secinajumi:Ko es saprastu?
+%1)Pirmkart es atradiju ortusa savu lab.darba variantu.
+%2)Ar komandiem 'syms' un 'solve' risinaju savu dotu vienadojumu a + e^b*(x^2)-a*x = 100
+%3)2 uzdevuma bija dota izteiksme y = cos(2*x)*(5*x+8), kur vajag atrast F(x) -?
+%4)Pec tam ar komandu x = [-4*pi:0.01:4*pi]; defineju x skaitla vektoru
+%5)Talak javeic izteiksmes vektorizāciju(jaieliek "." pirms reizinajuma,dalijuma, utt)
+%6)x vietā jāliek skaitļu vektors
+%7)% eval ir reāla laika interpretatora funkcija
+%8)uzzimesim ar komandu plot
+%9)Obligati japievieno anotaciju ar komandiem   y_ltx = latex(y);y_int_ltx
+%= latex(y_int);h =
+%legend(['$',y_ltx,'$'],['$',y_int_ltx,'$']);set(h,'Interpreter','latex') ,
+%lai butu viegli orienteties grafika
