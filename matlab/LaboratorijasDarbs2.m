@@ -24,12 +24,15 @@ set(h,'Interpreter','latex')
 %Secinajumi:Ko es saprastu?
 %1)Pirmkart es atradiju ortusa savu lab.darba variantu.
 %2)Ar komandiem 'syms' un 'solve' risinaju savu dotu vienadojumu a + e^b*(x^2)-a*x = 100
-%3)2 uzdevuma bija dota izteiksme y = cos(2*x)*(5*x+8), kur vajag atrast F(x) -?
+%3)2 uzdevuma bija dota izteiksme y = cos(2*x)*(5*x+8), kur vajag atrast F(x) -?]
+%3,5) Jaintegre ar komandu y_int = int(y)
 %4)Pec tam ar komandu x = [-4*pi:0.01:4*pi]; defineju x skaitla vektoru
 %5)Talak javeic izteiksmes vektorizāciju(jaieliek "." pirms reizinajuma,dalijuma, utt)
 %6)x vietā jāliek skaitļu vektors
 %7)% eval ir reāla laika interpretatora funkcija
-%8)uzzimesim ar komandu plot
+%8)uzzimesim ar komandu plot 
+%8,5) uzliksim limitus y asei ar komandu ylim([-60 60]);
+
 %9)Obligati japievieno anotaciju ar komandiem   y_ltx = latex(y);y_int_ltx
 %= latex(y_int);h =
 %legend(['$',y_ltx,'$'],['$',y_int_ltx,'$']);set(h,'Interpreter','latex') ,
