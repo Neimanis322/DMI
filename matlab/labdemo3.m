@@ -23,7 +23,7 @@ y_const = zeros(size(t_const))+2.5;
 %% Nu??u sign?ls
 t_zero = 0:0.01:1;
 y_zero = zeros(size(t_zero));
-%plot(t_zero,y_zero)
+plot(t_zero,y_zero)
 %% trok??a sign?ls
 t_noise = 2.5:0.01:4.5;
 y_noise = rand(size(t_noise)) * 3 - 1.5;
