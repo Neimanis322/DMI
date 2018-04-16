@@ -36,7 +36,7 @@
 %plot(t,y)
 %ylim([-3 3])
 %grid on
-function y = lab3_demo_fun(t)
+function y = lab3_fun(t)
 t = 0:0.01:5.5;
 %t_zero = 3.5:0.01:4;
 t_zerof=(t>=3.5)&(t<=4);t_zero = t(t_zerof);
