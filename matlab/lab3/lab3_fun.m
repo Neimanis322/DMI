@@ -37,15 +37,15 @@
 %ylim([-3 3])
 %grid on
 function y = lab3_fun(t)
-t = 0:0.01:5.5;
+%t = 0:0.01:5.5;
 %t_zero = 3.5:0.01:4;
-t_zerof=(t>=3.5)&(t<=4);t_zero = t(t_zerof);
+t_zerof=(t>=3.5)&(t<4);t_zero = t(t_zerof);
 %t_sin =1:0.01:2.5;
-t_sinf=(t>=1)&(t<2.5);t_sin=t(t_sinf);
+t_sinf=(t>1)&(t<2.5);t_sin=t(t_sinf);
 %t_noise = 4:0.01:5.5;
-t_noisef=(t>=4)&(t<5.5);t_noise=t(t_noisef);
+t_noisef=(t>=4)&(t<=5.5);t_noise=t(t_noisef);
 %t_const = 2.5:0.01:3.5;
-t_constf=(t>=2.5)&(t<=3.5);t_const=t(t_constf);
+t_constf=(t>=2.5)&(t<3.5);t_const=t(t_constf);
 %t_saw = 0:0.01:1;
 t_sawf = (t>=0)&(t<=1);t_saw=t(t_sawf);
 %% sinusoīda
@@ -73,9 +73,9 @@ y_noise = 2.5*rand(size(t_noise))-1.25;
 %% signālu apvienošana
 t = [t_saw,t_sin,t_const,t_zero,t_noise];
 y = [y_saw,y_sin,y_const,y_zero,y_noise];
-plot(t,y)
-ylim([-3 3])
-grid on
+%plot(t,y)
+%ylim([-3 3])
+%grid on
 %% Secinājumi
 %Ko es sapratu? Ir doti 5 veidu signali, (sinusoida, lineari mainigs
 %signals, konstantes signals, nuļu signals, trokšņa signals), kurus vajag

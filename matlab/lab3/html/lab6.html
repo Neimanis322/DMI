@@ -1,0 +1,308 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>6 Laboratorijas darbs</title><meta name="generator" content="MATLAB 9.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-05-14"><meta name="DC.source" content="lab6.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>6 Laboratorijas darbs</h1><!--introduction--><p>Raimonds Neimanis 171REB112 - REBCO4, 1.kurss</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Vid&#275;jas vert&#299;bas apr&#275;&#311;ins</a></li><li><a href="#2">istas videjas veribas atra&#353;ana</a></li><li><a href="#3">istas videjas veribas atra&#353;ana</a></li><li><a href="#4">Simulink apr&#275;&#311;ini</a></li><li><a href="#5">Secin&#257;jumi</a></li></ul></div><h2 id="1">Vid&#275;jas vert&#299;bas apr&#275;&#311;ins</h2><pre class="codeinput">t = 0:0.01:5.5;
+N = length(t);
+xvid3a = 1/(N-1)*sum(lab3_fun(t(1:end-1)))
+xvid3b = 1/(N-1)*sum(lab3_fun(t(2:end)))
+h = 0.01
+xvid3c = 1/(N-1) * sum(lab3_fun(t(1:end-1)+h/2))
+xvid4 = 1/(N-1)* ((lab3_fun(t(1)) + lab3_fun(t(end)))/2 + sum(lab3_fun(t(2:end-1))))
+</pre><pre class="codeoutput">
+xvid3a =
+
+   -0.0415
+
+
+xvid3b =
+
+   -0.0523
+
+
+h =
+
+    0.0100
+
+
+xvid3c =
+
+   -0.0681
+
+
+xvid4 =
+
+   -0.0524
+
+</pre><h2 id="2">istas videjas veribas atra&#353;ana</h2><div><ul><li>sinuso&#299;da</li></ul></div><pre class="codeinput">syms <span class="string">t_sin</span><span class="comment">%% Vid&#275;jas vert&#299;bas apr&#275;&#311;ins</span>
+t = 0:0.01:5.5;
+N = length(t);
+xvid3a = 1/(N-1)*sum(lab3_fun(t(1:end-1)))
+xvid3b = 1/(N-1)*sum(lab3_fun(t(2:end)))
+h = 0.01
+xvid3c = 1/(N-1) * sum(lab3_fun(t(1:end-1)+h/2))
+xvid4 = 1/(N-1)* ((lab3_fun(t(1)) + lab3_fun(t(end)))/2 + sum(lab3_fun(t(2:end-1))))
+</pre><pre class="codeoutput">
+xvid3a =
+
+   -0.0420
+
+
+xvid3b =
+
+   -0.0674
+
+
+h =
+
+    0.0100
+
+
+xvid3c =
+
+   -0.0475
+
+
+xvid4 =
+
+   -0.0498
+
+</pre><h2 id="3">istas videjas veribas atra&#353;ana</h2><div><ul><li>sinuso&#299;da</li></ul></div><pre class="codeinput">syms <span class="string">t_sin</span>
+A0=0; A=-2.5; T = (2.5-1)/6; f = 1/T;
+delay = 1;
+y_sin=A0+A*sin(2*pi*f*(t_sin-delay));
+int_sin=int(y_sin,t_sin,1,2.5)
+<span class="comment">% * saw</span>
+syms <span class="string">t_saw</span>
+k = (0-2)/(0-1);
+delay = 0;
+y_saw = k*(t_saw-delay);
+int_saw = int(y_saw,t_saw,0,1)
+<span class="comment">% * const</span>
+syms <span class="string">t_const</span>
+y_const = -2.5;
+int_const = int(y_const,t_const,2.5,3.5)
+ista_vv =double(1/(t(end))*(int_const+int_saw+int_sin))
+A0=0; A=-2.5; T = (2.5-1)/6; f = 1/T;
+delay = 1;
+y_sin=A0+A*sin(2*pi*f*(t_sin-delay));
+int_sin=int(y_sin,t_sin,1,2.5)
+<span class="comment">% * saw</span>
+syms <span class="string">t_saw</span>
+k = (0-2)/(0-1);
+delay = 0;
+y_saw = k*(t_saw-delay);
+int_saw = int(y_saw,t_saw,0,1)
+<span class="comment">% * const</span>
+syms <span class="string">t_const</span>
+y_const = -2.5;
+int_const = int(y_const,t_const,2.5,3.5)
+ista_vv =double(1/(t(end))*(int_const+int_saw+int_sin))
+<span class="comment">% Rezult&#257;tu noform&#275;&#353;ana tabulas vai grafika veid&#257;</span>
+dt = [0.5 0.1 0.05 0.01 0.005];
+xvid3cm =[];
+<span class="keyword">for</span> dtc  = dt
+    t = 0:dtc:5.5;
+    N = length(t);
+    h = dtc;
+    xvid3c = 1/(N-1) * sum(lab3_fun(t(1:end-1)+h/2));
+    fprintf(<span class="string">'|platums=%d\t|vv3c=%d\n'</span>,h,xvid3c);
+    xvid3cm = [xvid3cm,xvid3c];
+<span class="keyword">end</span>
+loglog(dt,xvid3cm,<span class="string">'o-'</span>,dt,ista_vv+0*dt)
+<span class="comment">% semilogyista_vv</span>
+<span class="comment">% loglog</span>
+</pre><pre class="codeoutput"> 
+int_sin =
+ 
+0
+ 
+ 
+int_saw =
+ 
+1
+ 
+ 
+int_const =
+ 
+-5/2
+ 
+
+ista_vv =
+
+   -0.2727
+
+ 
+int_sin =
+ 
+0
+ 
+ 
+int_saw =
+ 
+1
+ 
+ 
+int_const =
+ 
+-5/2
+ 
+
+ista_vv =
+
+   -0.2727
+
+|platums=5.000000e-01	|vv3c=-7.629631e-02
+|platums=1.000000e-01	|vv3c=-2.381275e-03
+|platums=5.000000e-02	|vv3c=-1.072599e-01
+|platums=1.000000e-02	|vv3c=-5.332940e-02
+|platums=5.000000e-03	|vv3c=-4.140930e-02
+</pre><img vspace="5" hspace="5" src="lab6_01.png" alt=""> <h2 id="4">Simulink apr&#275;&#311;ini</h2><p><img vspace="5" hspace="5" src="../a.png" alt=""> </p><p><img vspace="5" hspace="5" src="../b.png" alt=""> </p><p><img vspace="5" hspace="5" src="../d.png" alt=""> </p><h2 id="5">Secin&#257;jumi</h2><p>Simulinkam lai tas straadatu vajadzetu komandlogaa nodefin&#275;t dtc = 0.01 Ar matlab programaturu mes iemacijamies  apreikinat videju  vertibu un efiktivu vertibu ar dazadiem formulam(metodiem),ka ari iemacijamies ar Simulinku modelet funkcijas videju vertibu apreikinasanu.</p><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% 6 Laboratorijas darbs
+% Raimonds Neimanis 171REB112 - REBCO4, 1.kurss
+%% Vidējas vertības aprēķins
+t = 0:0.01:5.5;
+N = length(t);
+xvid3a = 1/(N-1)*sum(lab3_fun(t(1:end-1)))
+xvid3b = 1/(N-1)*sum(lab3_fun(t(2:end)))
+h = 0.01
+xvid3c = 1/(N-1) * sum(lab3_fun(t(1:end-1)+h/2))
+xvid4 = 1/(N-1)* ((lab3_fun(t(1)) + lab3_fun(t(end)))/2 + sum(lab3_fun(t(2:end-1))))
+%% istas videjas veribas atrašana
+% * sinusoīda
+syms t_sin%% Vidējas vertības aprēķins
+t = 0:0.01:5.5;
+N = length(t);
+xvid3a = 1/(N-1)*sum(lab3_fun(t(1:end-1)))
+xvid3b = 1/(N-1)*sum(lab3_fun(t(2:end)))
+h = 0.01
+xvid3c = 1/(N-1) * sum(lab3_fun(t(1:end-1)+h/2))
+xvid4 = 1/(N-1)* ((lab3_fun(t(1)) + lab3_fun(t(end)))/2 + sum(lab3_fun(t(2:end-1))))
+%% istas videjas veribas atrašana
+% * sinusoīda
+syms t_sin
+A0=0; A=-2.5; T = (2.5-1)/6; f = 1/T;
+delay = 1;
+y_sin=A0+A*sin(2*pi*f*(t_sin-delay));
+int_sin=int(y_sin,t_sin,1,2.5)
+% * saw
+syms t_saw
+k = (0-2)/(0-1);
+delay = 0;
+y_saw = k*(t_saw-delay);
+int_saw = int(y_saw,t_saw,0,1)
+% * const
+syms t_const
+y_const = -2.5;
+int_const = int(y_const,t_const,2.5,3.5)
+ista_vv =double(1/(t(end))*(int_const+int_saw+int_sin))
+A0=0; A=-2.5; T = (2.5-1)/6; f = 1/T;
+delay = 1;
+y_sin=A0+A*sin(2*pi*f*(t_sin-delay));
+int_sin=int(y_sin,t_sin,1,2.5)
+% * saw
+syms t_saw
+k = (0-2)/(0-1);
+delay = 0;
+y_saw = k*(t_saw-delay);
+int_saw = int(y_saw,t_saw,0,1)
+% * const
+syms t_const
+y_const = -2.5;
+int_const = int(y_const,t_const,2.5,3.5)
+ista_vv =double(1/(t(end))*(int_const+int_saw+int_sin))
+% Rezultātu noformēšana tabulas vai grafika veidā
+dt = [0.5 0.1 0.05 0.01 0.005];
+xvid3cm =[];
+for dtc  = dt
+    t = 0:dtc:5.5;
+    N = length(t);
+    h = dtc;
+    xvid3c = 1/(N-1) * sum(lab3_fun(t(1:end-1)+h/2));
+    fprintf('|platums=%d\t|vv3c=%d\n',h,xvid3c);
+    xvid3cm = [xvid3cm,xvid3c];
+end
+loglog(dt,xvid3cm,'o-',dt,ista_vv+0*dt)
+% semilogyista_vv
+% loglog
+    
+%% Simulink aprēķini
+% 
+% <<../a.png>>
+%
+% <<../b.png>>
+%
+% <<../d.png>>
+%
+%% Secinājumi
+% Simulinkam lai tas straadatu vajadzetu komandlogaa nodefinēt dtc = 0.01
+% Ar matlab programaturu mes iemacijamies  apreikinat videju  vertibu un
+% efiktivu vertibu ar dazadiem formulam(metodiem),ka ari iemacijamies ar
+% Simulinku modelet funkcijas videju vertibu apreikinasanu. 
+##### SOURCE END #####
+--></body></html>
